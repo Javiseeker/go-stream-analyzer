@@ -35,7 +35,15 @@ var (
 	listLock        sync.RWMutex
 	peerConnections []peerConnectionState
 	trackLocals     map[string]*webrtc.TrackLocalStaticRTP
-
+	config          = webrtc.Configuration{
+		ICEServers: []webrtc.ICEServer{
+			{
+				URLs:       []string{"turn:numb.viagenie.ca?transport=tcp"},
+				Username:   "jal@oiga.com",
+				Credential: "Javier.123",
+			},
+		},
+	}
 	// required variables for chunks process.
 	ivfFile  *ivfwriter.IVFWriter = nil
 	start                         = time.Now()
@@ -229,7 +237,7 @@ func websocketHandler(w http.ResponseWriter, r *http.Request) {
 	defer c.Close() //nolint
 
 	// Create new PeerConnection
-	peerConnection, err := webrtc.NewPeerConnection(webrtc.Configuration{})
+	peerConnection, err := webrtc.NewPeerConnection(config)
 	if err != nil {
 		log.Print(err)
 		return
