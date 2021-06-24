@@ -1,0 +1,12 @@
+{
+  "name": "Signaling Server for WEBRTC",
+  "description": "Signaling server test",
+  "keywords": [
+    "signaling server test",
+    "go",
+    "sample",
+    "example"
+  ],
+  "website": "https://github.com/Javiseeker/signaling-server-test-heroku",
+  "repository": "https://github.com/Javiseeker/signaling-server-test-heroku"
+}
