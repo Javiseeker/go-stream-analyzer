@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"log"
 	"net/http"
+	"os"
 	"os/exec"
 	"strconv"
 	"sync"
@@ -25,7 +26,7 @@ const (
 )
 
 var (
-	addr     = flag.String("addr", ":8080", "http service address")
+	addr     = flag.String("addr", ":"+os.Getenv("PORT"), "http service address")
 	upgrader = websocket.Upgrader{
 		CheckOrigin: func(r *http.Request) bool { return true },
 	}
