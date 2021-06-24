@@ -1,1 +1,1 @@
-web: bin/signaling-server-test-heroku
+stream-analyzer: bin/go-stream-analyzer

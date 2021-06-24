@@ -1,12 +1,10 @@
 {
-  "name": "Signaling Server for WEBRTC",
-  "description": "Signaling server test",
+  "name": "Stream analyzer",
+  "description": "analyzer of webRTC data stream.",
   "keywords": [
-    "signaling server test",
-    "go",
-    "sample",
-    "example"
+    "stream analyzer",
+    "go"
   ],
-  "website": "https://github.com/Javiseeker/signaling-server-test-heroku",
-  "repository": "https://github.com/Javiseeker/signaling-server-test-heroku"
+  "website": "https://github.com/Javiseeker/go-stream-analyzer",
+  "repository": "https://github.com/Javiseeker/stream-analyzer"
 }
