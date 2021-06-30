@@ -39,8 +39,8 @@ var (
 		ICEServers: []webrtc.ICEServer{
 			{
 				URLs:       []string{"turn:numb.viagenie.ca?transport=tcp"},
-				Username:   "jp@oiga.com",
-				Credential: "Jorge.Puerta00**",
+				Username:   "0876688bc83be19523323603196d03a06cf8a08ae601aff267a7e75dc734aee7",
+				Credential: "IlQHkUP2vfuxUCGu8c+C+84aj9rVZZjSZzJ+rohU7/k=",
 			},
 		},
 	}
